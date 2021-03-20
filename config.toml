@@ -1,0 +1,191 @@
+baseURL = "http://www.example.com"
+defaultContentLanguage = "en"
+disqusShortname = "yourdiscussshortname"
+languageCode = "en"
+paginate = 20
+pygmentsCodeFences = true
+pygmentsCodeFencesGuessSyntax = true
+pygmentsStyle = "b2"
+theme = "hugo-coder"
+title = "johndoe"
+
+[params]
+author = "John Doe"
+avatarURL = "images/avatar.jpg"
+description = "John Doe's personal website"
+info = "Full Stack DevOps and Magician"
+keywords = "blog,developer,personal"
+#gravatar = "john.doe@example.com"
+dateFormat = "January 2, 2006"
+footerContent = "Enter a text here."
+hideCopyright = false
+hideCredits = false
+hideFooter = false
+since = 2019
+# Git Commit in Footer, uncomment the line below to enable it.
+commit = "https://github.com/luizdepra/hugo-coder/tree/"
+rtl = false
+# Specify light/dark colorscheme
+# Supported values:
+# "auto" (use preference set by browser)
+# "dark" (dark background, light foreground)
+# "light" (light background, dark foreground) (default)
+colorScheme = "auto"
+# Hide the toggle button, along with the associated vertical divider
+hideColorSchemeToggle = false
+# Series see also post count
+maxSeeAlsoItems = 5
+# Enable Twemoji
+enableTwemoji = true
+# Custom CSS
+customCSS = []
+# Custom SCSS
+customSCSS = []
+# Custom JS
+customJS = []
+
+# If you want to use fathom(https://usefathom.com) for analytics, add this section
+[params.fathomAnalytics]
+siteID = "ABCDE"
+# Default value is cdn.usefathom.com, overwrite this if you are self-hosting
+serverURL = "analytics.example.com"
+
+# If you want to use plausible(https://plausible.io) for analytics, add this section
+[params.plausibleAnalytics]
+domain = "example.com"
+# Default value is plausible.io, overwrite this if you are self-hosting or using a custom domain
+serverURL = "analytics.example.com"
+
+# If you want to use goatcounter(https://goatcounter.com) for analytics, add this section
+[params.goatCounter]
+code = "code"
+
+# If you want to use Cloudflare Web Analytics(https://cloudflare.com) for analytics, add this section
+[params.cloudflare]
+token = "token"
+
+# If you want to use Matomo(https://matomo.org) for analytics, add this section
+[params.matomo]
+# Default value is "1", overwrite this if you are cloud-hosting
+siteID = "ABCDE"
+# For cloud-hosting, use provided URL, e.g. example.matomo.cloud
+serverURL = "analytics.example.com"
+
+# If you want to use Google Tag Manager(https://analytics.google.com/) for analytics, add this section
+[params.googleTagManager]
+id = "gid"
+
+# If you want to implement a Content-Security-Policy, add this section
+[params.csp]
+childsrc = ["'self'"]
+fontsrc = ["'self'", "https://fonts.gstatic.com", "https://cdn.jsdelivr.net/"]
+formaction = ["'self'"]
+framesrc = ["'self'"]
+imgsrc = ["'self'"]
+objectsrc = ["'none'"]
+prefetchsrc = ["'self'"]
+scriptsrc = ["'self'", "'unsafe-inline'", "https://www.google-analytics.com"]
+stylesrc = [
+  "'self'",
+  "'unsafe-inline'",
+  "https://fonts.googleapis.com/",
+  "https://cdn.jsdelivr.net/",
+]
+
+[taxonomies]
+author = "authors"
+category = "categories"
+series = "series"
+tag = "tags"
+
+[[params.social]]
+icon = "fa fa-github"
+name = "Github"
+url = "https://github.com/johndoe/"
+weight = 1
+
+[[params.social]]
+icon = "fa fa-gitlab"
+name = "Gitlab"
+url = "https://gitlab.com/johndoe/"
+weight = 2
+
+[[params.social]]
+icon = "fa fa-twitter"
+name = "Twitter"
+url = "https://twitter.com/johndoe/"
+weight = 3
+
+[[params.social]]
+icon = "fa fa-linkedin"
+name = "LinkedIn"
+url = "https://www.linkedin.com/in/johndoe/"
+weight = 4
+
+[[params.social]]
+icon = "fa fa-medium"
+name = "Medium"
+url = "https://medium.com/@johndoe"
+weight = 5
+
+[[params.social]]
+icon = "fa fa-rss"
+name = "RSS"
+rel = "alternate"
+type = "application/rss+xml"
+url = "https://myhugosite.com/index.xml"
+weight = 6
+
+[languages.en]
+languageName = "English"
+
+[[languages.en.menu.main]]
+name = "About"
+url = "about/"
+weight = 1
+
+[[languages.en.menu.main]]
+name = "Blog"
+url = "posts/"
+weight = 2
+
+[[languages.en.menu.main]]
+name = "Projects"
+url = "https://luizdepra.dev"
+weight = 3
+
+[[languages.en.menu.main]]
+name = "Contact me"
+url = "contact/"
+weight = 5
+
+[languages.pt-br]
+languageName = "Português"
+title = "João Ninguém"
+
+[languages.pt-br.params]
+author = "João Ninguém"
+description = "Sítio pessoal de João Ninguém"
+footerContent = "Coloque algum texto aqui."
+info = "Full Stack DevOps e Mágico"
+keywords = "blog,desenvolvedor,pessoal"
+
+[[languages.pt-br.menu.main]]
+name = "Sobre"
+url = "about/"
+weight = 1
+
+[[languages.pt-br.menu.main]]
+name = "Blog"
+url = "posts/"
+weight = 2
+
+[[languages.pt-br.menu.main]]
+name = "Projetos"
+url = "https://luizdepra.dev"
+weight = 3
+
+[[languages.pt-br.menu.main]]
+name = "Contato"
+url = "contact/"
+weight = 5
